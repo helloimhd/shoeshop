@@ -1,0 +1,27 @@
+{
+    "name": "Shop",
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "shoeModel",
+            "otherEntityRelationshipName": "shop",
+            "relationshipName": "shoeModel"
+        }
+    ],
+    "changelogDate": "20191111032758",
+    "entityTableName": "shop",
+    "dto": "no",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

@@ -1,0 +1,23 @@
+entity Shop {
+	name String
+}
+
+entity ShoeModel {
+	name String, 
+    brand String, 
+    price Float
+}
+
+relationship OneToMany {
+	Shop{shoeModel} to ShoeModel
+}
+
+relationship ManyToOne {
+	ShoeModel{shop} to Shop
+}
+
+// Set service options to all except few
+service all with serviceImpl
+
+// Set an angular suffix
+// angularSuffix * with mySuffix

@@ -1,0 +1,43 @@
+{
+    "name": "ShoeModel",
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "brand",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "price",
+            "fieldType": "Float"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "shop",
+            "otherEntityRelationshipName": "shoeModel",
+            "relationshipName": "shop",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "shop",
+            "otherEntityRelationshipName": "shoeModel",
+            "relationshipName": "shop",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20191111032759",
+    "entityTableName": "shoe_model",
+    "dto": "no",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}
